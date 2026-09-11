@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ugorji Radiology Consultants / Duramap</title>
+<style>
+  :root { --teal: #0F766E; --ink: #1a1a1a; --bg: #ffffff; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+  }
+  header {
+    background: var(--teal);
+    color: white;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 .25rem; font-size: 1.8rem; }
+  header p { margin: 0; opacity: .9; }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  .card {
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .card h2 { color: var(--teal); font-size: 1.05rem; margin-top: 0; }
+  a.button {
+    display: inline-block;
+    margin-top: .75rem;
+    padding: .6rem 1.1rem;
+    background: var(--teal);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  /* --- example animation: a simple pulsing brain-scan sweep --- */
+  .scan-demo {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background: #f4f6f6;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  .scan-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(15,118,110,.55), transparent);
+    animation: sweep 2.6s ease-in-out infinite;
+  }
+  .scan-demo span {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    color: #667;
+    letter-spacing: .04em;
+  }
+  @keyframes sweep {
+    0%   { left: -40px; }
+    50%  { left: 100%; }
+    100% { left: -40px; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Ugorji Radiology Consultants, LLC</h1>
+    <p>Duramap&trade; &middot; urc.care &middot; duramap.online</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>What this page is</h2>
+      <p>
+        This is a working example of a plain HTML/CSS page hosted directly from this GitHub repo via
+        GitHub Pages, no server, no build step. It updates the moment new HTML is pushed to the
+        <code>main</code> branch.
+      </p>
+      <div class="scan-demo">
+        <div class="scan-line"></div>
+        <span>example CSS animation</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Documents</h2>
+      <p>Current CV for Dr. Joseph O. Ugorji, DO:</p>
+      <a class="button" href="Dr-Joseph-Ugorji-CV.pdf">View CV (PDF)</a>
+    </div>
+  </main>
+</body>
+</html>
