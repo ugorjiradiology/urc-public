@@ -7,4 +7,3 @@ view and download (no PHI, no internal/business-sensitive material without sign-
 ## Contents
 
 - `Dr-Joseph-Ugorji-CV.pdf` — current CV for Dr. Joseph O. Ugorji, DO
-- `URC-Legal-Fee-Schedule-2026-Q3.pdf` — current med-legal expert engagement fee schedule
